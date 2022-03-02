@@ -45,7 +45,7 @@ calc.addEventListener("click", function (event) {
       str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       return str.join(".");
     }
-    invest.innerHTML = separator(thirtyPercent);
+    outputinvest.innerHTML = separator(thirtyPercent);
     console.log(separator(thirtyPercent));
 
     let twentyPercent = (thirtyPercent * 0.2);
@@ -59,7 +59,7 @@ calc.addEventListener("click", function (event) {
       return str.join(".");
     }
 
-    capital.innerHTML = separator(twentyPercent);
+    outputcapital.innerHTML = separator(twentyPercent);
     console.log(separator(twentyPercent));
   }
 });
